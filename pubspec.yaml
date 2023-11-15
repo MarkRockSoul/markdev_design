@@ -1,7 +1,7 @@
 name: markdev_design
 description: A new Flutter package project.
+homepage: https://github.com/MarkRockSoul/markdev_design
 version: 0.0.1
-homepage: markdev.com
 
 environment:
   sdk: ">=3.0.6 <4.0.0"
