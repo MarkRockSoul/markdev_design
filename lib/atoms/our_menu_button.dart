@@ -6,11 +6,13 @@ class OurMenuButton extends StatelessWidget {
       required this.label,
       required this.iconData,
       required this.color,
+      this.backgroundColor,
       required this.splashColor,
       required this.nextPage});
   final String label;
   final IconData iconData;
   final Color color;
+  final Color? backgroundColor;
   final Color splashColor;
   final Function() nextPage;
 
@@ -20,6 +22,7 @@ class OurMenuButton extends StatelessWidget {
       height: 140,
       width: 140,
       child: Card(
+        color: backgroundColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0),
         ),
