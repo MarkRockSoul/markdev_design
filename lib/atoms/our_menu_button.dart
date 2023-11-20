@@ -24,7 +24,7 @@ class OurMenuButton extends StatelessWidget {
       child: Card(
         color: backgroundColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(34.0),
         ),
         margin: const EdgeInsets.all(8),
         child: ListTile(
