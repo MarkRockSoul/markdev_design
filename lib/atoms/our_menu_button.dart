@@ -18,42 +18,46 @@ class OurMenuButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: backgroundColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(30.0),
-      ),
-      margin: const EdgeInsets.all(8),
-      child: ListTile(
-        splashColor: splashColor,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-        onTap: nextPage,
-        title: Padding(
-          padding: const EdgeInsets.only(left: 0, right: 0, top: 0, bottom: 10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                iconData,
-                color: color,
-                size: 42,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                label,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  //fontFamily: 'League',
-                  fontSize: 12,
+    return SizedBox(
+      height: 130,
+      child: Card(
+        color: backgroundColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
+        margin: const EdgeInsets.all(8),
+        child: ListTile(
+          splashColor: splashColor,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+          onTap: nextPage,
+          title: Padding(
+            padding:
+                const EdgeInsets.only(left: 0, right: 0, top: 0, bottom: 10),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  iconData,
                   color: color,
-                  //color: Color(0xFFFC8E28)
+                  size: 42,
                 ),
-              ),
-            ],
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  label,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    //fontFamily: 'League',
+                    fontSize: 12,
+                    color: color,
+                    //color: Color(0xFFFC8E28)
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
