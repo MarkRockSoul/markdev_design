@@ -12,6 +12,7 @@ class OurTextField extends StatelessWidget {
   final List<TextInputFormatter>? inputFormatters;
   final int? maxLines;
   final int? minLines;
+  final int? maxLength;
   final Color? colorFill; // Nuevo parámetro.
 
   const OurTextField(
@@ -26,6 +27,7 @@ class OurTextField extends StatelessWidget {
       this.inputFormatters, // Agrega el nuevo parámetro al constructor.
       this.maxLines,
       this.minLines,
+      this.maxLength,
       this.colorFill})
       : super(key: key);
 
@@ -37,6 +39,7 @@ class OurTextField extends StatelessWidget {
       keyboardType: keyboardType,
       maxLines: maxLines,
       minLines: minLines,
+      maxLength: maxLength,
 
       inputFormatters:
           inputFormatters, // Aplica los formateadores de entrada aquí.
