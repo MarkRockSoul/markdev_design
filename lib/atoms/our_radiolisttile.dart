@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class OurRadioListTile extends StatelessWidget {
   final String title;
-  final String value;
-  final String groupValue;
-  final Function(String?)? onChanged;
+  final dynamic value;
+  final dynamic groupValue;
+  final Function(dynamic)? onChanged;
   final Color? activeColor; // Nuevo parámetro.
 
   const OurRadioListTile(
@@ -18,7 +18,7 @@ class OurRadioListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RadioListTile<String>(
+    return RadioListTile<dynamic>(
       activeColor: activeColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       title: Text(title, style: const TextStyle(fontWeight: FontWeight.w500)),
