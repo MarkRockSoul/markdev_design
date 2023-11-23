@@ -7,6 +7,7 @@ class OurTextField extends StatelessWidget {
   final TextInputType? keyboardType;
   final String? labelText;
   final String? hintText;
+  final String? prefixText;
   final Icon? prefixIcon;
   final Function(String?)? onChanged;
   final List<TextInputFormatter>? inputFormatters;
@@ -22,6 +23,7 @@ class OurTextField extends StatelessWidget {
       this.keyboardType,
       this.labelText,
       this.hintText,
+      this.prefixText,
       this.prefixIcon,
       this.onChanged,
       this.inputFormatters, // Agrega el nuevo parámetro al constructor.
@@ -40,11 +42,11 @@ class OurTextField extends StatelessWidget {
       maxLines: maxLines,
       minLines: minLines,
       maxLength: maxLength,
-
-      inputFormatters:
-          inputFormatters, // Aplica los formateadores de entrada aquí.
+      inputFormatters: inputFormatters,
       style: const TextStyle(fontWeight: FontWeight.w500, color: Colors.black),
       decoration: InputDecoration(
+          prefixStyle: const TextStyle(color: Colors.black54),
+          prefixText: prefixText,
           labelText: labelText,
           hintText: hintText,
           prefixIcon: prefixIcon,
