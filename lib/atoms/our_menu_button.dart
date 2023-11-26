@@ -19,7 +19,7 @@ class OurMenuButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 130,
+      height: 128,
       child: Card(
         color: backgroundColor,
         shape: RoundedRectangleBorder(
@@ -43,13 +43,13 @@ class OurMenuButton extends StatelessWidget {
                   size: 42,
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 14,
                 ),
                 Text(
                   label,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w800,
                     //fontFamily: 'League',
                     fontSize: 12,
                     color: color,
