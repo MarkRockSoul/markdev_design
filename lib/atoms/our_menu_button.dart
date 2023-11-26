@@ -23,13 +23,13 @@ class OurMenuButton extends StatelessWidget {
       child: Card(
         color: backgroundColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(24.0),
         ),
         margin: const EdgeInsets.all(8),
         child: ListTile(
           splashColor: splashColor,
           shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(24.0)),
           onTap: nextPage,
           title: Padding(
             padding:

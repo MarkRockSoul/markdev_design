@@ -45,7 +45,6 @@ class OurTextField extends StatelessWidget {
       inputFormatters: inputFormatters,
       style: const TextStyle(fontWeight: FontWeight.w500, color: Colors.black),
       decoration: InputDecoration(
-          prefixStyle: const TextStyle(color: Colors.black54),
           prefixText: prefixText,
           labelText: labelText,
           hintText: hintText,
