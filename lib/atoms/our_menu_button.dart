@@ -51,7 +51,7 @@ class OurMenuButton extends StatelessWidget {
                   label,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontWeight: FontWeight.w800,
+                    fontWeight: FontWeight.w700,
                     //fontFamily: 'League',
                     fontSize: 12,
                     color: color,
