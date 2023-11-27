@@ -53,7 +53,7 @@ class OurMenuButton extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     //fontFamily: 'League',
-                    fontSize: 12,
+                    fontSize: 12.5,
                     color: color,
                     //color: Color(0xFFFC8E28)
                   ),
