@@ -8,10 +8,12 @@ class OurMenuButton extends StatelessWidget {
       required this.color,
       this.backgroundColor,
       required this.splashColor,
-      required this.nextPage});
+      required this.nextPage,
+      required this.iconColor});
   final String label;
   final IconData iconData;
   final Color color;
+  final Color iconColor;
   final Color? backgroundColor;
   final Color splashColor;
   final Function() nextPage;
@@ -39,7 +41,7 @@ class OurMenuButton extends StatelessWidget {
               children: [
                 Icon(
                   iconData,
-                  color: color,
+                  color: iconColor,
                   size: 42,
                 ),
                 const SizedBox(
